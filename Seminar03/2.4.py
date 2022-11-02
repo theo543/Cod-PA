@@ -3,9 +3,9 @@ def shift_in_range(nr, shift, start, end):
         return nr
     return (nr - start + shift) % (end - start + 1) + start;
 def shift_char(char, shift):
-    if ord(char) in range(ord('a'), ord('z')):
+    if ord(char) in range(ord('a'), ord('z') + 1):
         return chr(shift_in_range(ord(char), shift, ord('a'), ord('z')))
-    elif ord(char) in range(ord('A'), ord('Z')):
+    elif ord(char) in range(ord('A'), ord('Z') + 1):
         return chr(shift_in_range(ord(char), shift, ord('A'), ord('Z')))
     else:
         return char
