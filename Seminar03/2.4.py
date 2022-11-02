@@ -1,7 +1,7 @@
 def shift_in_range(nr, shift, start, end):
     if nr < start or nr > end:
         return nr
-    return (nr - start + shift) % (end - start + 1) + start;
+    return (nr - start + shift) % (end - start + 1) + start
 def shift_char(char, shift):
     if ord(char) in range(ord('a'), ord('z') + 1):
         return chr(shift_in_range(ord(char), shift, ord('a'), ord('z')))
@@ -12,9 +12,10 @@ def shift_char(char, shift):
 def main():
     text = input("text=")
     shift = int(input("shift="))
-    result = ''.join([shift_char(char, shift) for char in text])
+    result = ''.join(shift_char(char, shift) for char in text)
     print(result)
 
 
 if __name__ == "__main__":
     main()
+a
