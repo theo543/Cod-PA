@@ -5,6 +5,7 @@ def generate(n : int, m : int):
     mat = [[-1 for _ in range(n)] for _ in range(m)]
     for diag in range(m + n - 1):
         i, j = None, None
+        diag_list = []
         if diag >= n:
             i = 0
             j = m - 1 - (diag - n + 1)
@@ -12,9 +13,12 @@ def generate(n : int, m : int):
             i = n - diag - 1
             j = m - 1
         while i in range(0, n) and j in range(0, m):
-            mat[j][i] = nrs.pop()
+            diag_list.append((j, i))
             i += 1
             j -= 1
+        random.shuffle(diag_list)
+        for coords in diag_list:
+            mat[coords[0]][coords[1]] = nrs.pop()
     return mat
 
 def output(mat : list[list[int]]):
