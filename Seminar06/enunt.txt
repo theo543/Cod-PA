@@ -1,0 +1,17 @@
+Instructions
+Problemele propuse din seminarul 6 (adaugat la files)
+
+La care se adauga...
+
+1. Fie A un multiset format din n numere naturale nenule și S un număr natural nenul.
+Folosind metoda Backtracking, să se afișeze toate submultiseturile lui A care au suma
+elementelor egală cu S.
+2. Fie A un multiset format din n numere naturale nenule și S un număr natural nenul.
+Folosind metoda programării dinamice, să se afișeze un submultiset a lui A care are suma
+elementelor egală cu S.
+3. Folosind doar metoda backtracking, generați toate subșirurile crescătoare maximale
+ale un șir format din n numere întregi.
+4. Optimizați algoritmul de la problema anterioară, utilizând metoda programării
+dinamice pentru a determina lungimea maximă a unui subșir crescător al șirului dat .
+
++ tema suplimentara pentru cei care s-au oferit voluntari si care se lega de "problema debitarii"...
